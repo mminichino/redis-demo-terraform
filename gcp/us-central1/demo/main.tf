@@ -44,7 +44,7 @@ provider "kubernetes" {
 }
 
 module "gke_env" {
-  source                 = "git::https://github.com/mminichino/terraform.git//redis/gcp/modules/gke_env?ref=v1.0.34"
+  source                 = "git::https://github.com/mminichino/terraform.git//redis/gcp/modules/gke_env?ref=v1.0.35"
   gke_domain_name        = module.gke.cluster_domain
   gke_storage_class      = module.gke.storage_class
   depends_on             = [module.gke]
