@@ -51,7 +51,7 @@ module "gke_env" {
 }
 
 module "argocd" {
-  source                 = "git::https://github.com/mminichino/terraform.git//redis/gcp/modules/argocd?ref=v1.0.37"
+  source                 = "git::https://github.com/mminichino/terraform.git//redis/gcp/modules/argocd?ref=v1.0.38"
   gke_domain_name        = module.gke.cluster_domain
   depends_on             = [module.gke_env]
 }
